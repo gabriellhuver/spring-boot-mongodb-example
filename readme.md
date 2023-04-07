@@ -4,7 +4,7 @@ Este é um exemplo de microserviço Spring Boot que utiliza o MongoDB para armaz
 
 ## Pré-requisitos
 
-- JDK 11 ou superior
+- JDK 20
 - Maven
 - MongoDB
 
