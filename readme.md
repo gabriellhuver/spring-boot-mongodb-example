@@ -1,5 +1,7 @@
 # Microserviço Spring Boot com conexão ao MongoDB e testes automatizados
 
+[![Build Status](https://github.com/gabriellhuver/spring-boot-mongodb-example/actions/workflows/maven.yml/badge.svg)](https://github.com/gabriellhuver/spring-boot-mongodb-example/actions/workflows/maven.yml)
+
 Este é um exemplo de microserviço Spring Boot que utiliza o MongoDB para armazenar e recuperar informações, e inclui testes automatizados para garantir o seu funcionamento correto.
 
 ## Pré-requisitos
