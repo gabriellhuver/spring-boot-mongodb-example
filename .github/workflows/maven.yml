@@ -32,3 +32,6 @@ jobs:
       
     - name: SonarCloud Scan
       uses: SonarSource/sonarcloud-github-action@v1.9
+      with:
+        sonar-host-url: 'https://sonarcloud.io/'
+        sonar-login: ${{ secrets.SONAR_TOKEN }}
