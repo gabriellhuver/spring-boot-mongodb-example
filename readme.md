@@ -24,7 +24,7 @@ A cobertura de testes é de 100% das classes do projeto, garantindo que todas as
 
 ## Funcionalidades do serviço
 
-O serviço permite a criação, leitura, atualização e exclusão de informações armazenadas no MongoDB. As informações são armazenadas em um formato base64 para maior segurança.
+O serviço permite a criação, leitura, atualização e exclusão de informações armazenadas no MongoDB.
 
 ## Documentação da API
 
