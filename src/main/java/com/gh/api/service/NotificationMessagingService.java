@@ -1,6 +1,9 @@
 package com.gh.api.service;
 
+import java.util.concurrent.Future;
+
 import org.apache.kafka.clients.producer.ProducerRecord;
+import org.apache.kafka.clients.producer.RecordMetadata;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,9 +19,9 @@ public class NotificationMessagingService {
 	@Autowired
 	private KafkaConnector kafkaConnector;
 	
-	public void notificar(NotificationRequestDTO notificationRequestDTO) {
+	public Future<RecordMetadata> notificar(NotificationRequestDTO notificationRequestDTO) {
 		ProducerRecord<String, Object> producerRecord = new ProducerRecord<>(TOPIC, notificationRequestDTO.toString());
-		kafkaConnector.kafkaProducerDev().send(producerRecord);	
+		return kafkaConnector.kafkaProducerDev().send(producerRecord);	
 	}
 
 }
